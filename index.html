@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LinkedIn / Meow Mashup: Adds content to LinkedIn</title>
+		<style>
+			body, form{
+				margin:20px auto;
+				max-width:800px;
+				overflow-x:hidden;
+			}
+			fieldset{
+				display: flex;
+			}
+			input#description{
+				flex-grow:50;
+				margin: 0 20px;
+			}
+			input#location{
+				flex-grow:50;
+				margin: 0 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="toLinkedIn" method="get">
+			<fieldset>
+				<legend>Type in content with meowfacts to share on LinkedIn</legend>
+				<label for="content">Content:</label>
+				<input id="content" name="content" type="text" />
+				<input type="submit" value="submit" />
+			</fieldset>
+		</form>
+	</body>
+</html>
